@@ -16,7 +16,6 @@ export const ContactSection = () => {
       <>
          <section id="contact">
           <StyledContainerGrid>
-            {/* <StyledContainer> */}
             <StyledDiv>
               <div className="container-div3">
                 <div className="container-div">
@@ -57,8 +56,8 @@ export const ContactSection = () => {
                   <div className="div-container">
                     <div>
                       <img className="linkedin" src = {linkedin} alt = "linkedin" />
-                    </div>
-                    <div>
+                      </div>
+                      <div>
                       <TitleH2>My LinkedIn</TitleH2>
                       <Headline3>We can create more constant interactions as well as a sharing network</Headline3>
                       <a href="https://www.linkedin.com/in/chris-yamate/"target="_blank"><Body>Go to LinkedIn now</Body></a>
@@ -66,13 +65,13 @@ export const ContactSection = () => {
                     </div>
                   </div>
            
-                  </div>
+                </div>
               </div>
              
             </StyledDiv>
-            {/* </StyledContainer> */}
+      
           </StyledContainerGrid>
-          </section> 
+        </section> 
       </>
     )
 }

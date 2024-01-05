@@ -14,7 +14,7 @@ export const Footer = () => {
        
          <StyledContainerGrid>
             <StyledContainerDiv>
-            <div className="container1">
+                <div className="container1">
                     <StyledFigure>
                         <img className="image-sati" src = {photo} alt = "photo" />
                     </StyledFigure>
@@ -22,15 +22,15 @@ export const Footer = () => {
                         <Headline>Thank you!</Headline>
                         <Headline2 className="container3">Follow me on my social networks and let's talk</Headline2>
                     </div> 
-              <div>
-              <TiSocialLinkedinCircular size={60}  color="#506CCF"/>
-              </div>      
                 </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/chris-yamate/"target="_blank"><span><TiSocialLinkedinCircular size={60}  color="#506CCF"/></span></a>    
+                    </div>      
             </StyledContainerDiv>
-      </StyledContainerGrid>
+        </StyledContainerGrid>
     
-        </>
+     </>
     )
-}
+}  
 
 

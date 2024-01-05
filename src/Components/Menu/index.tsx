@@ -1,9 +1,8 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import { StyledBtnGrey } from '../../Styles/Button';
+import { StyledDiv } from './style';
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -25,8 +24,8 @@ export default function BasicMenu() {
         onClick={handleClick}
       >
         <MenuIcon/>
-      </Button>
-      <Menu
+        </Button>
+        <Menu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -35,14 +34,12 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        
-        {/* <MenuItem a href="#contact" onClick={handleClose}>About</MenuItem> */}
-        <a href="#home" onClick={handleClose}>Home</a>
-        {/* <a href="#about"  onClick={handleClose}>About<StyledBtnGrey>About</StyledBtnGrey></a> */}
-    
-        <a href="#about" onClick={handleClose}>About</a>
-        <a href="#project" onClick={handleClose}>Projects</a>
-        <a href="#contact" onClick={handleClose}>Contact</a>
+        <StyledDiv>
+          <a href="#home" onClick={handleClose}>Home</a>
+          <a href="#about" onClick={handleClose}>About</a>
+          <a href="#project" onClick={handleClose}>Projects</a>
+          <a href="#contact" onClick={handleClose}>Contact</a>
+        </StyledDiv>
       </Menu>
     </div>
   );

@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components"
-// import styled from "styled-components"
 
 export const GlobalReset = createGlobalStyle`
 
@@ -25,7 +24,6 @@ body {
     font-family:'IBM Plex Sans';
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
-    /* outline: none; */
   }
 
   button{
@@ -43,6 +41,3 @@ body {
     background: transparent;
   }
   `
-// export const StyledPadding = styled.div`
-//   padding: clamp(.625rem, 10vw, 8.125rem);
-//   `

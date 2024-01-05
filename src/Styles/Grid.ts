@@ -5,5 +5,7 @@ export const StyledContainerGrid  = styled.section`
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-  /* height: 800px; */
+  @media (max-width: 300px){
+    padding: 10px;
+  } 
 `;

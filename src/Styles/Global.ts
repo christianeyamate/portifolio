@@ -22,7 +22,6 @@ const GlobalStyle = createGlobalStyle`
   --grey-2:#E9ECEF;
   --grey-1:#F8F9FA;
 
-      /* font-family: 'Inter', sans-serif; */
   --font-family-Inter:'Inter', sans-serif;
   --font-family-IBM:'IBM Plex Sans';
 }
